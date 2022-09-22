@@ -1,19 +1,23 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './styleApp.css';
+import HeaderComponent from "./components/HeaderComponent"
+import MainComponent from "./components/MainComponent"
+import AboutComponent from "./components/AboutComponent"
+import ProjectsMain from "./components/ProjectsMain"
+
 
 function App() {
   return (
-    <div className="App">
-      <header>
-      <h1>Helow world</h1>
-      <button onClick={clickalert}>click me</button>
-      
-      </header>
+    
+    <div>
+      <HeaderComponent/>
+      <MainComponent/>
+      <AboutComponent/>
+      <ProjectsMain/>
     </div>
+
   );
 }
-function clickalert(){
-  alert("mesaj")
-}
+
 export default App;
