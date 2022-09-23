@@ -178,7 +178,7 @@
     }
     a{
         background-color: #bbb;
-        color: #b14562;
+        color: #a62a4b;
         text-decoration: none;
         &:hover{
             text-decoration: underline;
@@ -192,19 +192,34 @@
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+    // border: 1px solid red;
+    margin-bottom: 100px;
     article{
-        
-        a{
-            text-decoration: none;
-            cursor: pointer;
-            color:black;
-            &:hover{
-                text-decoration: underline;
-            }
-        }
+        width: 200px;
+        border: 1px solid;
+        box-shadow: 5px 10px #555555 ;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
 
     }
   }
+  
+  a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #555555;
+    margin-bottom: 10px;
+    &:hover{
+        text-decoration: underline !important;
+        color: #a62a4b;
+    }
+}
+
+  
 .skills{
     width: 100%;
     display: flex;
@@ -295,6 +310,75 @@
     }
     
   
+}
+
+.Contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-top: 100px;
+    padding-bottom: 100px;
+      border: 1px solid red;
+
+    section {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        p{
+            font-weight: bold;
+        }
+        .fa{
+            margin-right: 10px;
+        }
+    }
+
+    .FormSection {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        // border: 1px solid red;
+        gap: 20px;
+        form {
+            width: 100%;
+            gap: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+    
+            input,textarea {
+                padding: 10px;
+                color: #555555;
+                background-color: #bbb;
+                border-radius: 5px;
+                border: 1px solid #555555;
+                font-weight: bold;
+                
+    
+                &:focus {
+                    border: none;
+                }
+            }
+        }
+
+        button {
+            width: 30%;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #bbb;
+            text-align: center;
+
+            &:hover {
+                background-color: #a62a4b;
+                transition: 0.5s linear;
+            }
+        }
+    }
+
+    
+
+
 }
 
   @media  screen and (max-width: 600px)  {

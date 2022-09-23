@@ -9,10 +9,11 @@ export default function Header(){
           <a href="./index.html"><i className="fa fa-user-circle red"></i>Ene George</a>
          <div>
              <a href="#section1">About</a>
-              <a href="#section">Portofolio</a>
+              <a href="#section2">Portofolio</a>
               <a href="#section3">Study</a>
-              <a href="#section1">Contact</a>
+              <a href="#section4">Contact</a>
          </div>
+         
       </header>
     )
 }

@@ -246,7 +246,7 @@ main article .imgUser img {
 
 .about-class a {
   background-color: #bbb;
-  color: #b14562;
+  color: #a62a4b;
   text-decoration: none;
 }
 
@@ -267,16 +267,40 @@ main article .imgUser img {
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 100px;
 }
 
-.article-main article a {
+.article-main article {
+  width: 200px;
+  border: 1px solid;
+  -webkit-box-shadow: 5px 10px #555555;
+          box-shadow: 5px 10px #555555;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+a {
   text-decoration: none;
   cursor: pointer;
-  color: black;
+  color: #555555;
+  margin-bottom: 10px;
 }
 
-.article-main article a:hover {
-  text-decoration: underline;
+a:hover {
+  text-decoration: underline !important;
+  color: #a62a4b;
 }
 
 .skills {
@@ -419,6 +443,99 @@ main article .imgUser img {
 
 .ContainerStudy .imgCertificate img {
   width: 50%;
+}
+
+.Contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-top: 100px;
+  padding-bottom: 100px;
+  border: 1px solid red;
+}
+
+.Contact section {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Contact section p {
+  font-weight: bold;
+}
+
+.Contact section .fa {
+  margin-right: 10px;
+}
+
+.Contact .FormSection {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  gap: 20px;
+}
+
+.Contact .FormSection form {
+  width: 100%;
+  gap: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.Contact .FormSection form input, .Contact .FormSection form textarea {
+  padding: 10px;
+  color: #555555;
+  background-color: #bbb;
+  border-radius: 5px;
+  border: 1px solid #555555;
+  font-weight: bold;
+}
+
+.Contact .FormSection form input:focus, .Contact .FormSection form textarea:focus {
+  border: none;
+}
+
+.Contact .FormSection button {
+  width: 30%;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #bbb;
+  text-align: center;
+}
+
+.Contact .FormSection button:hover {
+  background-color: #a62a4b;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
 }
 
 @media screen and (max-width: 600px) {

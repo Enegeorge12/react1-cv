@@ -7,6 +7,7 @@ import AboutComponent from "./components/AboutComponent"
 import SkillsComponent from "./components/SkillsComponent"
 import StudyComponent from "./components/StudyComponent"
 import ProjectsMain from "./components/ProjectsMain"
+import FooterComponent from './components/FooterComponent';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <SkillsComponent/>
       <StudyComponent/>
       <ProjectsMain/>
+      <FooterComponent/>
     </div>
 
   );
