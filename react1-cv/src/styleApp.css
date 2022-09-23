@@ -14,11 +14,16 @@ html {
   scroll-behavior: smooth;
 }
 
+a {
+  font-weight: bold;
+}
+
 .red {
   color: #a62a4b;
 }
 
 header {
+  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -32,6 +37,10 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 4;
 }
 
 header a {
@@ -270,9 +279,152 @@ main article .imgUser img {
   text-decoration: underline;
 }
 
+.skills {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.skills article {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.skills .Skilssection {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+}
+
+.skills .Skilssection section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+}
+
+.skills .Skilssection section label {
+  width: 50%;
+  font-weight: bold;
+}
+
+.skills .Skilssection section div {
+  width: 50%;
+}
+
+.w3-border {
+  width: 100%;
+  border: 0.1px solid #7f7b7b;
+  border-radius: 10px;
+}
+
+.backgroundRed {
+  background-color: #a62a4b;
+  border-radius: 10px;
+  margin: 0px;
+}
+
+.titleStudy {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 80px;
+}
+
+.titleStudy h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.ContainerStudy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+.ContainerStudy p, .ContainerStudy ul, .ContainerStudy li {
+  font-weight: bold;
+}
+
+.ContainerStudy div {
+  width: 50%;
+}
+
+.ContainerStudy .imgCertificate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ContainerStudy .imgCertificate img {
+  width: 50%;
+}
+
 @media screen and (max-width: 600px) {
   body {
-    width: 100%;
+    width: 350px;
+    margin: 0 auto;
   }
   header {
     width: 100%;
@@ -294,7 +446,6 @@ main article .imgUser img {
             flex-direction: column;
   }
   main section {
-    border: 1px solid red;
     width: 100%;
   }
   main article {
@@ -348,6 +499,33 @@ main article .imgUser img {
     border-radius: 5px;
   }
   .about-class .imgdown {
+    margin-top: 20px;
+  }
+  .skills {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .skills article {
+    width: 100%;
+  }
+  .skills .Skilssection {
+    width: 100%;
+  }
+  .ContainerStudy {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .ContainerStudy div {
+    width: 100%;
+  }
+  .ContainerStudy .imgCertificate {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-top: 20px;
   }
 }

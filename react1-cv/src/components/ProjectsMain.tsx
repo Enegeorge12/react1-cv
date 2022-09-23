@@ -2,7 +2,8 @@ import React from 'react';
 
 export default function ProjectsMain(){
     return(
-       <div className='article-main'id='section2'>
+        <><h1 style={{textAlign: "center", marginTop:"140px"}}>Check my portofolio</h1>
+       <div className='article-main'id='section2'> 
         <article>
             <h1>Project 1</h1>
             <h4>Ethic whine</h4>
@@ -28,5 +29,6 @@ export default function ProjectsMain(){
             <a href="#">Link</a>
         </article>
        </div>
+       </>
     )
 }
