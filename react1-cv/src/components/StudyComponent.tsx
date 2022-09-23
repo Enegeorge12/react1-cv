@@ -20,7 +20,7 @@ export default function StudyComponent() {
                     <li>Navigation Page</li>
                 </ul>
                </div>
-               <div className='imgCertificate'> <img src="https://media-exp1.licdn.com/dms/image/C4D22AQGWl9h2q7SzTg/feedshare-shrink_160/0/1663829975957?e=1666828800&v=beta&t=PlPSmp_BJCIgeY96k0jtudFZNJbudxLq6K5bxmtqLDQ" alt="certificate" /></div>
+               <div className='imgCertificate'> <img src="https://media-exp1.licdn.com/dms/image/C4D2DAQEEo3450dDNxg/profile-treasury-image-shrink_160_160/0/1662555801692?e=1664528400&v=beta&t=Hn1qwBgpMUXHnDzFhCw8k1ofIsVpWVakM_DJu7u-hVI" alt="certificate" /></div>
             
         </div>
 

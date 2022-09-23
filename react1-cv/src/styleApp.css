@@ -459,7 +459,6 @@ a:hover {
   width: 100%;
   margin-top: 100px;
   padding-bottom: 100px;
-  border: 1px solid red;
 }
 
 .Contact section {
@@ -530,6 +529,9 @@ a:hover {
   border-radius: 5px;
   background-color: #bbb;
   text-align: center;
+  font-weight: bold;
+  color: #555555;
+  border: 1px solid #555555;
 }
 
 .Contact .FormSection button:hover {
@@ -541,7 +543,7 @@ a:hover {
 @media screen and (max-width: 600px) {
   body {
     width: 350px;
-    margin: 0 auto;
+    margin: 0 auto 5px;
   }
   header {
     width: 100%;
@@ -576,10 +578,9 @@ a:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    border: 1px solid red;
+    margin-top: 100px;
   }
   main article .imgUser {
-    border: 1px solid gray;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -591,11 +592,30 @@ a:hover {
         -ms-flex-align: center;
             align-items: center;
   }
-  .linksContact {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  main article div:nth-child(2) {
+    width: 30px;
+    height: 30px;
+    left: -400px;
+  }
+  main article div:nth-child(3) {
+    width: 30px;
+    height: 30px;
+    left: 100px;
+    top: 120px;
+  }
+  main article div:last-child {
+    width: 20px;
+    height: 20px;
+    left: 250px;
+  }
+  .article-main {
+    width: 100%;
+    gap: 20px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .article-main article {
+    width: 30%;
   }
   .about-class {
     width: 100%;
@@ -644,6 +664,31 @@ a:hover {
         -ms-flex-pack: center;
             justify-content: center;
     margin-top: 20px;
+  }
+  .Contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .Contact section {
+    width: 100%;
+  }
+  .Contact section h1 {
+    text-align: center;
+  }
+  .Contact section p {
+    margin: 5px;
+  }
+  .Contact .FormSection {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .Contact .FormSection form {
+    width: 100%;
+  }
+  .Contact .FormSection form button {
+    width: 50%;
   }
 }
 /*# sourceMappingURL=styleApp.css.map */
